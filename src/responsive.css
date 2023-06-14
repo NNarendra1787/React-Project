@@ -3,9 +3,55 @@
         background-color: pink;
     }
 
-    .Navbar {
+    .TopTitle {
+        position: relative;
+        right: 270px;
+    }
+
+    .paddingSmall {
+        position: relative;
+        top: 10px;
+    }
+
+    .navbar {
+        width: 100vw;
+    }
+
+    .head .heading {
         display: none;
     }
+
+    header .icon {
+        display: none;
+    }
+
+    header .flex {
+        display: none;
+    }
+
+    .barIcon {
+        display: block;
+        position: absolute;
+        bottom: 65px;
+        right: 100px;
+    }
+    .navbar li{
+        position: relative;
+        bottom: 140px;
+        height: 0px;
+    }
+
+    header .navbar {
+        position: absolute;
+        display: block;
+
+    }
+
+    header ul li {
+        margin-bottom: 20px;
+    }
+
+
 
     .Main {
         height: 100vh;
@@ -44,7 +90,7 @@
     .side-cont {
         width: 65%;
     }
-    
+
     .repic {
         min-width: 36%;
         min-height: 95%;
@@ -52,67 +98,81 @@
         max-height: 95%;
         margin-right: 10px;
     }
-    .pikachu{
+
+    .pikachu {
         width: 96%;
     }
-    .St-cont{
+
+    .St-cont {
         width: 98%;
     }
+
     /* Clickpage */
-    
-    #LeadT{
+
+    #LeadT {
         width: 70%;
     }
-    #LeadD{
+
+    #LeadD {
         width: 70%;
     }
-    #LeadC{
+
+    #LeadC {
         width: 70%;
     }
-    #LeadP{
-        position: relative;
-        right: 12%;
-    }
-    .shareLeft{
-        position: fixed;
-        top: 600px;
-    }
-    .BacktoHome{
-        position: relative;
-        left: 27%;
-        /* color: paleturquoise; */
-    }
-    .giver{
+
+    #LeadP {
         position: relative;
         right: 12%;
     }
 
-    .homi{
+    .shareLeft {
+        position: fixed;
+        top: 600px;
+    }
+
+    .BacktoHome {
+        position: relative;
+        left: 27%;
+        /* color: paleturquoise; */
+    }
+
+    .giver {
+        position: relative;
+        right: 12%;
+    }
+
+    .homi {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
     }
-    .Boxxer{
+
+    .Boxxer {
         width: 100%;
         align-items: center;
     }
-    .ReDown{
+
+    .ReDown {
         width: 100%;
-    } 
-    .text-wid{
+    }
+
+    .text-wid {
         width: 65%;
     }
+
     /* Home Page */
-    
-     /* .Topper{ */
-        /* display: grid; */
-        /* grid-template-columns: repeat(5, 1fr); */
+
+    /* .Topper{ */
+    /* display: grid; */
+    /* grid-template-columns: repeat(5, 1fr); */
     /* }  */
-    #TopLeft{
+    #TopLeft {
         grid-area: 1/1/3/5;
     }
-    .RightSideSet{
+
+    .RightSideSet {
         grid-area: 2/1/5/5;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -121,89 +181,105 @@
         top: 55px;
         left: 10px;
     }
-    #TopRight{
+
+    #TopRight {
         grid-area: 1/1/3/7;
     }
-    #BottomRight{
+    .letfull{
+        position: relative;
+        bottom: 110px;
+    }
+
+    #BottomRight {
         grid-area: 2/1/7/7;
         position: relative;
         top: 68px;
         /* left: 10px; */
     }
-     .Topver{
+
+    .Topver {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 1rem;
     }
-    
-    .topImg{
+
+    .topImg {
         height: 18vh;
         width: 80vw;
     }
-    .sideTopImg{
+
+    .sideTopImg {
         height: 18vh;
         width: 77vw;
     }
-    .sideImg{
+
+    .sideImg {
         height: 18vh;
         width: 77vw;
     }
 
     /* Latest Wala Page */
-    .UpSide{
+    .UpSide {
         position: relative;
-        top: 200px;
+        top: 70px;
     }
-    .gasli{
+
+    .gasli {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .Top-let{
+
+    .Top-let {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 95%;
     }
-    .mg{
+
+    .mg {
         min-width: 90%;
         min-height: 50%;
         max-width: 90%;
         max-height: 50%;
     }
-    .const{
+
+    .const {
         width: 90%;
         padding: 0px 50px;
     }
 
     /* MidPart or side by sid wala */
-    .midpart{
+    .midpart {
         display: flex;
         flex-direction: column;
         padding: 12px 20px;
         position: relative;
-        top: 170px;
+        top: 70px;
     }
-    .mainFirst{
+
+    .mainFirst {
         width: 99%;
     }
-    .BigigImg{
+
+    .BigigImg {
         display: none;
     }
-    
-    .AD{
+
+    .AD {
         display: none;
     }
-    .rightSide{
+
+    .rightSide {
         width: 100%;
     }
 
     /*Latest Storis  */
-    .DownSide{
+    .DownSide {
         position: relative;
-        top: 1023px;
+        top: 813px;
     }
 }
 
-/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> */
+/*  */

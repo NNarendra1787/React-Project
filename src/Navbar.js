@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 
 function Navbar() {
+  const [navbar, setNavbar] = useState(false)
   return (
     <>
-      <div className="Navbar">
-        <NavLink
+    <header>
+      <div className='paddingSmall '>
+        <nav>
+          <ul className={navbar ? "navbar" : "flex"} onClick={()=>setNavbar(false)}>
+            <li><NavLink
           to="/"
           id="myLinks"
           style={({ isActive }) => {
@@ -15,27 +19,17 @@ function Navbar() {
           }}
         >
           Home
-        </NavLink>
-        <NavLink
+        </NavLink></li>
+        <li><NavLink
           to="/bollywood"
           id="myLinks"
           style={({ isActive }) => {
             return isActive ? { color: "hotpink" } : { color: "rebeccapurple" };
           }}
         >
-          {" "}
           Bollywood{" "}
-        </NavLink>
-        <NavLink
-          to="/Technology"
-          id="myLinks"
-          style={({ isActive }) => {
-            return isActive ? { color: "hotpink" } : { color: "rebeccapurple" };
-          }}
-        >
-          Technology
-        </NavLink>
-        <NavLink
+        </NavLink></li>
+        <li> <NavLink
           to="/hollywood"
           id="myLinks"
           style={({ isActive }) => {
@@ -43,8 +37,17 @@ function Navbar() {
           }}
         >
           Hollywood
-        </NavLink>
-        <NavLink
+        </NavLink></li>
+        <li><NavLink
+          to="/Technology"
+          id="myLinks"
+          style={({ isActive }) => {
+            return isActive ? { color: "hotpink" } : { color: "rebeccapurple" };
+          }}
+        >
+          Technology
+        </NavLink></li>
+        <li><NavLink
           to="/fitness"
           id="myLinks"
           style={({ isActive }) => {
@@ -52,8 +55,8 @@ function Navbar() {
           }}
         >
           Fitness
-        </NavLink>
-        <NavLink
+        </NavLink></li>
+            <li> <NavLink
           to="/food"
           id="myLinks"
           style={({ isActive }) => {
@@ -61,9 +64,23 @@ function Navbar() {
           }}
         >
           Food
-        </NavLink>
+        </NavLink></li>
+          </ul>   
+          <button className='barIcon' onClick={()=>{
+            setNavbar(!navbar)
+          }}> {navbar ?  <i className='fa fa-times'></i>: <i className='fa fa-bars'></i>}</button>       
+        </nav>
+      <hr id='NavHr' /> 
       </div>
-      <hr id='NavHr' />
+    </header>
+       {/* <div className="Navbar"> */}
+        
+        
+        
+       
+        
+       
+      {/* </div> */}
     </>
   )
 }

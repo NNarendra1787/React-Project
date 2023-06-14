@@ -84,6 +84,25 @@ body{
   font-weight: bold;
 }
 
+/* Navbar */
+
+header li{
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+.barIcon{
+  font-size: 25px;
+  background: none;
+  color: rebeccapurple;
+  display: none;
+  border: none;
+}
+
 /* Openpage */
 .Main{
   display: flex;
