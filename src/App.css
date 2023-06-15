@@ -155,19 +155,23 @@ header li{
 }
 
 .Richu{
-  height: 55vh;
-}
+  height: 60%;
+} 
 .pikachu{
+  /* height: 10%; */
   display: flex;
   flex-direction: row;
   /* align-items: center; */
   padding: 12px 3px;
   margin: 5px;
-  height: 25vh;
+  /* height: 27vh; */
   border-bottom: 1px solid red;
 }
 .side-cont{
-  width: 27.8vw;
+  width: 28vw;
+}
+.sstcont{
+  width: 19vw;
 }
 .sideNews{
   width: 27%;
@@ -314,8 +318,10 @@ header li{
 }
 /* Extra Work */
 .AD{
- 
-  height: 110%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  height: 55%;
   width: 65%;
   /* align-items: self-end; */
   border: 2px solid black;
@@ -336,5 +342,13 @@ header li{
   to{
     transform: rotate(0deg);
   }
+}
+
+.myad{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
 }
 

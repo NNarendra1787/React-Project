@@ -45,7 +45,6 @@ function SinglePage() {
       <div className="sideNews">
         <div className="Richu">
           <h1>Top Post</h1>
-          {/* {data.articles.map((sd, index) => {  */}
           {data.map((sd, index) => {
             // console.log(count, index);
             if (index < cot) {
@@ -75,7 +74,7 @@ function SinglePage() {
                     <Link to={`/ClickPage/${sd.title}`} state={sd}>
                       <h5 className="heading">{sd.title} </h5>
                     </Link>
-                    <p>{sd.content}</p>
+                    <p className="sstcont">{sd.content}</p>
                     <br />
                   </div>
                   <hr />
@@ -84,7 +83,7 @@ function SinglePage() {
             }
           })}
           <div className="AD">
-          {/* <img src={AD} alt="not show" />  */}
+          <h1 className="myad">Advertisement</h1>
           
           </div>
         </div>

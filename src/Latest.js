@@ -39,7 +39,7 @@ function Latest(props) {
             <Link to={`/ClickPage/${data1[55].title}`} state={data1[55]}>
               <h4 className="heading">{data1[55].title} </h4>
             </Link>
-            <p>{data1[55].content}</p>
+            <p className="lp">{data1[55].content}</p>
           </div>
         </div>
         <div className="mainFirst">
@@ -48,7 +48,7 @@ function Latest(props) {
             <Link to={`/ClickPage/${data3[55].title}`} state={data3[55]}>
               <h4 className="heading">{data3[55].title} </h4>
             </Link>
-            <p>{data3[55].content}</p>
+            <p className="lp">{data3[55].content}</p>
           </div>
         </div>
         <div className="mainFirst">
@@ -57,7 +57,7 @@ function Latest(props) {
             <Link to={`/ClickPage/${data5[55].title}`} state={data5[55]}>
               <h4 className="heading">{data5[55].title} </h4>
             </Link>
-            <p>{data5[55].content}</p>
+            <p className="lp">{data5[55].content}</p>
           </div>
         </div>
         <div className="mainFirst">
@@ -66,7 +66,7 @@ function Latest(props) {
             <Link to={`/ClickPage/${data2[55].title}`} state={data2[55]}>
               <h4 className="heading">{data2[55].title} </h4>
             </Link>
-            <p>{data2[55].content}</p>
+            <p className="llp">{data2[55].content}</p>
           </div>
         </div>
       </div>

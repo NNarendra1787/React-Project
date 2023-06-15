@@ -1,13 +1,12 @@
 import React from "react";
-import { Link, } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function ReTop(props) {
-
   const { data1, data2, data3, data4 } = props.props;
   return (
     <div className="rightSide">
       <div className="hunter">
-        <div className="AD"></div>
+      <div className="ADD"><h1 className="myad">Advertisement</h1></div>
         <h1>Top Post</h1>
 
         <div className="firstPage">

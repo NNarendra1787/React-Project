@@ -1,6 +1,6 @@
 #SweetHome{
     height: 100vh;
-    width: 100vw;
+    width: 98vw;
 }
 .Topver{
     display: flex;
@@ -53,13 +53,16 @@
 .letfull{
     color: yellow;
     position: relative;
-    bottom: 200px;
+    bottom: 110px;
     text-align: center;
+    left: 86px;
+    /* width: 140%; */
 }
 .topRight{
     color: yellow;
     position: relative;
     bottom: 150px;
+    /* left: 90px; */
     text-align: center;
 }
 .bottomright{
@@ -81,7 +84,7 @@
     display: flex;
     justify-content: space-between;
     /* width: 100%; */
-    padding: 12px 20px;
+    padding: 12px 10px;
 }
 .mainFirst{
     display: flex;
@@ -118,7 +121,7 @@
     width: 30vw;
     display: flex;
     justify-content: center;
-    height: 70%;
+    height: 80%;
 }
 .side-diff{
     width: 87%;
@@ -218,4 +221,19 @@
 }
 .Bimg{
     padding: 12px 23px;
+}
+.ADD{
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 65%;
+}
+.myad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
 }

@@ -21,12 +21,6 @@ function OpenPage() {
   useEffect(() => {
     var url = "https://blog-projectby-narendra.onrender.com/" + params.category;
 
-    // "https://newsapi.org/v2/everything?q=" +
-    // params.category +
-    // "&from=" +
-    // dateString +
-    // "&sortBy=publishedAt&language=en&apiKey=7c175424d17e40a3ae9481bc10d85a8f";
-
     var req = new Request(url);
     fetch(req).then((response) => {
       response.json().then((data) => {
